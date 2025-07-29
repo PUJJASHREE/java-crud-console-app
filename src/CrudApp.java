@@ -61,10 +61,10 @@ public class CrudApp {
     }
 
     private static void addUser() {
-        System.out.print("Enter name: ");
+        System.out.println("Enter name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter email: ");
+        System.out.println("Enter email: ");
         String email = scanner.nextLine();
 
         User user = new User(idCounter++, name, email);
@@ -83,7 +83,7 @@ public class CrudApp {
     }
 
     private static void getUserById() {
-        System.out.print("Enter user ID: ");
+        System.out.println("Enter user ID: ");
         int id = scanner.nextInt();
         scanner.nextLine();
 
@@ -97,16 +97,16 @@ public class CrudApp {
     }
 
     private static void updateUser() {
-        System.out.print("Enter user ID to update: ");
+        System.out.println("Enter user ID to update: ");
         int id = scanner.nextInt();
         scanner.nextLine();
 
         for (User user : users) {
             if (user.getId() == id) {
-                System.out.print("Enter new name: ");
+                System.out.println("Enter new name: ");
                 String name = scanner.nextLine();
 
-                System.out.print("Enter new email: ");
+                System.out.println("Enter new email: ");
                 String email = scanner.nextLine();
 
                 user.setName(name);
@@ -119,7 +119,7 @@ public class CrudApp {
     }
 
     private static void deleteUser() {
-        System.out.print("Enter user ID to delete: ");
+        System.out.println("Enter user ID to delete: ");
         int id = scanner.nextInt();
         scanner.nextLine();
 
